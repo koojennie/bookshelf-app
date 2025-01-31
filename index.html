@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="judul-navbar">Bookshelf App</h1>
+      <img src="images/bookshelf.png" />
+    </header>
+
+    <main>
+      <section class="bagian-input">
+        <h2>Tambah Buku Baru</h2>
+        <form id="bookForm" data-testid="bookForm">
+          <div class="input">
+            <label for="bookFormTitle">Judul</label>
+            <input class="input-box" id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" />
+          </div>
+          <div class="input">
+            <label for="bookFormAuthor">Penulis</label>
+            <input class="input-box" id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
+          </div>
+          <div class="input">
+            <label for="bookFormYear">Tahun</label>
+            <input class="input-box" id="bookFormYear" type="number" required data-testid="bookFormYearInput" />
+          </div>
+          <div class="input-sebaris"> 
+            <label for="bookFormIsComplete">Selesai dibaca</label>
+            <input
+              id="bookFormIsComplete"
+              type="checkbox"
+              data-testid="bookFormIsCompleteCheckbox"
+            />
+          </div>
+          <button id="bookFormSubmit" type="submit" data-testid="bookFormSubmitButton">
+            Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+          </button>
+        </form>
+      </section>
+
+      <section class="bagian-cari">
+        <h2>Cari Buku</h2>
+        <form id="searchBook" data-testid="searchBookForm">
+          <label for="searchBookTitle">Judul</label>
+          <input class="input-box" id="searchBookTitle" type="text" data-testid="searchBookFormTitleInput" />
+          <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">
+            Cari <span class="fa-solid fa-magnifying-glass"></span>
+          </button>
+        </form>
+      </section>
+
+      <section class="rak-buku">
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="incompleteBookList" class="daftar-buku" data-testid="incompleteBookList">
+          <!-- 
+            Ini adalah struktur HTML untuk masing-masing buku.
+            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+          -->
+          <!-- <div data-bookid="123123123" class="item-buku" data-testid="bookItem">
+            <h3 data-testid="bookItemTitle">Judul Buku 1</h3>
+            <p data-testid="bookItemAuthor">Penulis: Penulis Buku 1</p>
+            <p data-testid="bookItemYear">Tahun: 2030</p>
+            <div class="aksi">
+              <button class="selesai" data-testid="bookItemIsCompleteButton">Selesai dibaca</button>
+              <button class="hapus" data-testid="bookItemDeleteButton">Hapus Buku</button>
+              <button class="edit" data-testid="bookItemEditButton">Edit Buku</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="rak-buku">
+        <h2>Selesai dibaca</h2>
+
+        <div id="completeBookList" class="daftar-buku" data-testid="completeBookList">
+          <!-- 
+            Ini adalah struktur HTML untuk masing-masing buku.
+            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+          -->
+          <!-- <div data-bookid="456456456" class="item-buku" data-testid="bookItem">
+            <h3 data-testid="bookItemTitle">Judul Buku 2</h3>
+            <p data-testid="bookItemAuthor">Penulis: Penulis Buku 2</p>
+            <p data-testid="bookItemYear">Tahun: 2030</p>
+            <div class="aksi">
+              <button class="selesai" data-testid="bookItemIsCompleteButton">Selesai dibaca</button>
+              <button class="hapus" data-testid="bookItemDeleteButton">Hapus Buku</button>
+              <button class="edit" data-testid="bookItemEditButton">Edit Buku</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/solid.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js" defer></script>
+  </body>
+</html>

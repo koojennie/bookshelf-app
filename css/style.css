@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 45px;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.navbar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8174a0;
+  color: white;
+  gap: 10px;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+input[type="checkbox"] {
+  accent-color: #8174a0;
+}
+
+.bagian-input {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #624e88;
+  border-radius: 10px;
+}
+
+.bagian-input > h2 {
+  text-align: center;
+  color: #624e88;
+}
+
+.bagian-input > form > .input {
+  margin: 8px 0;
+}
+
+.bagian-input > form > button {
+  background-color: white;
+  border: 2px solid #624e88;
+  color: #624e88;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.bagian-input > form > button:hover {
+  background-color: #8174a0;
+  color: white;
+  border: 2px solid #8174a0;
+}
+
+.bagian-input > form > button:active {
+  background-color: #8174a0;
+  color: white;
+  border: 2px solid #8174a0;
+}
+
+.bagian-input > form > button > span {
+  font-weight: bold;
+}
+
+.bagian-input > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.bagian-input > form > .input > label {
+  color: #8174a0;
+  font-weight: bold;
+}
+
+.bagian-input > form > .input-sebaris {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.bagian-input > form > .input-sebaris > label {
+  color: #8174a0;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.bagian-cari {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #624e88;
+  border-radius: 10px;
+}
+
+.bagian-cari > h2 {
+  color: #624e88;
+}
+
+.bagian-cari > form > label {
+  color: #8174a0;
+  font-weight: bold;
+}
+
+.bagian-cari > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.bagian-cari > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.bagian-cari > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input-box {
+  border: 2px solid #624e88;
+}
+
+.input-box:focus {
+  outline: 2px solid #a888b5;
+}
+
+.bagian-cari > form > button {
+  background-color: #8174a0;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rak-buku {
+  margin: 16px 0 0 0;
+  border: 1px solid #624e88;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.rak-buku > h2 {
+  color: #624e88;
+}
+
+.rak-buku > .daftar-buku {
+  padding: 16px;
+}
+
+.rak-buku > .daftar-buku > .item-buku {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #624e88;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.rak-buku > .daftar-buku > .item-buku > h3,
+p {
+  margin: 8px 0;
+}
+
+.rak-buku > .daftar-buku > .item-buku > .aksi > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.rak-buku > .daftar-buku > .item-buku > .aksi > .selesai {
+  background-color: #624e88;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.rak-buku > .daftar-buku > .item-buku > .aksi > .hapus {
+  background-color: #8967b3;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.rak-buku > .daftar-buku > .item-buku > .aksi > .edit {
+  background-color: #cb80ab;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.rak-buku > .daftar-buku > .item-buku > .aksi > button:hover {
+  transform: scale(1.1);
+}
