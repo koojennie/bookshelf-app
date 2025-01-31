@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     bookItem.querySelector(".edit").addEventListener("click", () => {
-      const newTitle = prompt("Masukkan judul baru:", book.title);
-      const newAuthor = prompt("Masukkan penulis baru:", book.author);
-      const newYear = prompt("Masukkan tahun baru:", book.year);
+      const newTitle = prompt("Perbarui Judul Buku:", book.title);
+      const newAuthor = prompt("Perbarui Penulis Buku:", book.author);
+      const newYear = prompt("Perbarui Tahun Terbit Buku:", book.year);
 
       if (newTitle && newAuthor && newYear) {
         book.title = newTitle;

@@ -68,7 +68,7 @@ input[type="checkbox"] {
   width: 100%;
   padding: 8px;
   cursor: pointer;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .bagian-input > form > button:hover {
@@ -138,6 +138,10 @@ input[type="checkbox"] {
   grid-gap: 10px;
 }
 
+.bagian-cari > form > button:hover {
+  background-color: #B784B7;
+  color: white;
+}
 .bagian-cari > form > label {
   display: flex;
   align-items: center;
@@ -167,6 +171,7 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: all 0.3s ease-in;
 }
 
 .rak-buku {
@@ -202,7 +207,7 @@ p {
   margin: 0 10px 0 0;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .rak-buku > .daftar-buku > .item-buku > .aksi > .selesai {
